@@ -1,0 +1,33 @@
+ul li {
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+ul li button {
+  background-color: coral;
+  border-style: none;
+  text-decoration: none !important;
+}
+ul li button:hover {
+  cursor: pointer;
+  background-color: crimson;
+  color: aliceblue;
+}
+ul li:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bold {
+  text-decoration: line-through;
+}
+.bold button {
+  text-decoration: none !important;
+}
+
+p {
+  margin: 0;
+}
