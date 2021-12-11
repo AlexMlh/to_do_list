@@ -1,15 +1,36 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: coral;
+  margin: 1rem;
+}
 ul li {
-  max-width: 200px;
   display: flex;
+  align-items: center ;
   justify-content: space-between;
   margin-bottom: 5px;
   overflow: auto;
+  font-size: 1.3rem;
+  border-bottom: black dotted 1px;
 }
 
 ul li button {
   background-color: coral;
   border-style: none;
   text-decoration: none !important;
+  padding:3px 5px;
 }
 ul li button:hover {
   cursor: pointer;
@@ -18,16 +39,31 @@ ul li button:hover {
 }
 ul li:hover {
   cursor: pointer;
-  font-weight: bold;
+  color: brown;
 }
 
 .bold {
   text-decoration: line-through;
 }
-.bold button {
-  text-decoration: none !important;
-}
 
 p {
   margin: 0;
+}
+
+ul {
+  padding: 1rem 10vw;
+  margin:1rem auto;
+  /* width: 400px; */
+  margin-top: 1rem;
+  
+}
+
+h4 {
+  margin: 0;
+  overflow: auto;
+}
+
+@media (max-width: 765px) {
+  ul {
+  }
 }

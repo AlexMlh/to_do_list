@@ -5,7 +5,7 @@ var ulItems =document.querySelectorAll("li button");
 var li =document.querySelectorAll("li");
 
 for (i=0; i< li.length; i++) {
-  li[i].addEventListener("click", boldFunction)
+  li[i].querySelector("h4").addEventListener("click", boldFunction)
 }
 function boldFunction() {
   this.classList.toggle("bold");
@@ -17,26 +17,31 @@ button.addEventListener("click" ,function() {
     addLi();
   }
 })
+
 inpt.addEventListener("keypress" ,function(event) {
   if (inpt.value !=="" && event.key === "Enter"  ) {
   addLi(); 
   }
 })
+
 for (i=0; i< ulItems.length; i++) {
   ulItems[i].addEventListener("click", myfunction );
 }
+
 function myfunction() {
   this.parentNode.remove();
 }
 
 function addLi() {
   li = document.createElement("li");
-    li.appendChild(document.createTextNode(inpt.value));
-    btn = document.createElement("button");
-    btn.appendChild(document.createTextNode("delite"));
-    ul.appendChild(li);
-    li.appendChild(btn);
-    btn.addEventListener("click", myfunction);
-    li.addEventListener("click", boldFunction);
-    inpt.value = '';
+  let item = document.createElement("h4");
+  item.textContent = inpt.value;
+  li.appendChild(item);
+  btn = document.createElement("button");
+  btn.appendChild(document.createTextNode("delite"));
+  li.appendChild(btn);
+  ul.appendChild(li);
+  btn.addEventListener("click", myfunction);
+  item.addEventListener("click", boldFunction);
+  inpt.value = '';
 } 
