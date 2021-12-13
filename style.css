@@ -24,7 +24,7 @@ ul li {
   display: flex;
   align-items: center ;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   overflow: auto;
   font-size: 1.3rem;
   border-bottom: black dotted 1px;
