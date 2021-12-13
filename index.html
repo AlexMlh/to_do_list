@@ -10,23 +10,12 @@
 <body>
   <div id="container">
     <h2> to do list</h2>
-    <button id="button">ADD</button>
-    <input type="text" name="text" id="inputtext" placeholder="new item">
+    <button id="button">+</button>
+    <input type="text" name="text" id="inputtext"  placeholder="new item">
     <ul id="myList">
-      <li >
-        <h4>
-          item one
-        </h4>
-        <button>delite</button>
-      </li>
-      <li>
-        <h4>
-          item two
-        </h4>
-        <button>delite</button>
-      </li>
     </ul>
-    <script src="./scrypt.js"></script>
+    <button id="del" onclick = clearFunc() style="visibility: hidden;">Clear list</button>
   </div>
+  <script src="./scrypt.js"></script>
 </body>
 </html>
